@@ -1,4 +1,6 @@
 #include "Camshift/Camshift.h"
+#include "CMT/CMT.h"
+#include "TLD/TLD.h"
 
 
 
@@ -11,6 +13,9 @@ public:
 	bool startTracking;
 	//camshift tracking
 	Camshift *camshift;
+	//CMT tracker
+	cmt::CMT *cmtTracker;
+	
 
 	//main function
 	void trackInit();
@@ -30,6 +35,7 @@ private:
 
 	
 	void camshiftTracking(cv::Mat &frame, cv::Rect box);
+	void cmtTracking(cv::Mat &frame, cv::Rect box);
 
 
 

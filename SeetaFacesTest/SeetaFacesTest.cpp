@@ -159,9 +159,7 @@ void faceDetect(cv::Mat &frame, vector<cv::Rect> &face_positions)
 	cout << "SSE is not used." << endl;
 #endif
 	*/
-	cout << "Image size (wxh): " << img_data.width << "x"
-		<< img_data.height << endl;
-
+	cout << "Image size (wxh): " << img_data.width << "x" << img_data.height << endl;
 	cv::Rect face_rect;
 
 	int32_t num_face = static_cast<int32_t>(faces.size());
