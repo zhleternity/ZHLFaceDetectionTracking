@@ -58,7 +58,7 @@ int main()
 		imshow("TestFace", frame);   //´°¿ÚÖÐÏÔÊ¾Í¼Ïñ
 		//face datection
 		faceDetect(frame, face_positions);
-#if 0
+#if 1
 		//face tracking
 		//***note:in face_positions,may have the same face rect, so we must do sth***;
 		at.trackInit();

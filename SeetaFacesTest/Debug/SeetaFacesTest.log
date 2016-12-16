@@ -1,14 +1,27 @@
-﻿生成启动时间为 2016/12/15 16:09:00。
+﻿生成启动时间为 2016/12/16 14:50:45。
      1>项目“D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\SeetaFacesTest\SeetaFacesTest.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\SeetaFacesTest.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt SeetaFacesTest.cpp
-         SeetaFacesTest.cpp
-     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\seetafacestest.cpp(40): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\seetafacestest.cpp(143): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
-     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\seetafacestest.cpp(145): warning C4244: “初始化”: 从“int64”转换到“double”，可能丢失数据
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ColorTracker\color_tracker.cpp ColorTracker\color_tracker_parameters.cpp
+         color_tracker_parameters.cpp
+         color_tracker.cpp
+     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\colortracker\color_tracker.cpp(725): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\colortracker\color_tracker.cpp(729): warning C4244: “初始化”: 从“double”转换到“unsigned int”，可能丢失数据
+     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\colortracker\color_tracker.cpp(730): warning C4244: “初始化”: 从“double”转换到“unsigned int”，可能丢失数据
+     1>d:\zhlworkdocs\facerecognition\seetafacestest\seetafacestest\colortracker\color_tracker.cpp(738): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\Debug\SeetaFacesTest.exe" /INCREMENTAL /NOLOGO opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\Debug\SeetaFacesTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\Debug\SeetaFacesTest.lib" /MACHINE:X86 Debug\allTracking.obj
          Debug\Camshift.obj
+         Debug\CMT.obj
+         Debug\common.obj
+         Debug\Consensus.obj
+         Debug\fastcluster.obj
+         Debug\Fusion.obj
+         Debug\Matcher.obj
+         Debug\Tracker.obj
+         Debug\color_tracker.obj
+         Debug\color_tracker_parameters.obj
+         Debug\CompressiveTracker.obj
          Debug\face_detection.obj
          Debug\fust.obj
          Debug\image_pyramid.obj
@@ -22,9 +35,17 @@
          Debug\surf_feature_map.obj
          Debug\surf_mlp.obj
          Debug\surf_mlp_model_reader.obj
+            正在创建库 D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\Debug\SeetaFacesTest.lib 和对象 D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\Debug\SeetaFacesTest.exp
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ??0FaceDetection@seeta@@QAE@PBD@Z (public: __thiscall seeta::FaceDetection::FaceDetection(char const *)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ??1FaceDetection@seeta@@QAE@XZ (public: __thiscall seeta::FaceDetection::~FaceDetection(void)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ?Detect@FaceDetection@seeta@@QAE?AV?$vector@UFaceInfo@seeta@@V?$allocator@UFaceInfo@seeta@@@std@@@std@@ABUImageData@2@@Z (public: class std::vector<struct seeta::FaceInfo,class std::allocator<struct seeta::FaceInfo> > __thiscall seeta::FaceDetection::Detect(struct seeta::ImageData const &)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ?SetMinFaceSize@FaceDetection@seeta@@QAEXH@Z (public: void __thiscall seeta::FaceDetection::SetMinFaceSize(int)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ?SetImagePyramidScaleFactor@FaceDetection@seeta@@QAEXM@Z (public: void __thiscall seeta::FaceDetection::SetImagePyramidScaleFactor(float)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ?SetWindowStep@FaceDetection@seeta@@QAEXHH@Z (public: void __thiscall seeta::FaceDetection::SetWindowStep(int,int)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
+     1>SeetaFacesTest.obj : warning LNK4217: 本地定义的符号 ?SetScoreThresh@FaceDetection@seeta@@QAEXM@Z (public: void __thiscall seeta::FaceDetection::SetScoreThresh(float)) 在函数 "void __cdecl faceDetect(class cv::Mat &,class std::vector<class cv::Rect_<int>,class std::allocator<class cv::Rect_<int> > > &)" (?faceDetect@@YAXAAVMat@cv@@AAV?$vector@V?$Rect_@H@cv@@V?$allocator@V?$Rect_@H@cv@@@std@@@std@@@Z) 中导入
          SeetaFacesTest.vcxproj -> D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\Debug\SeetaFacesTest.exe
      1>已完成生成项目“D:\zhlWorkDocs\faceRecognition\SeetaFacesTest\SeetaFacesTest\SeetaFacesTest.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.96
+已用时间 00:00:02.89

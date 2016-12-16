@@ -1,6 +1,8 @@
 #include "Camshift/Camshift.h"
 #include "CMT/CMT.h"
 #include "TLD/TLD.h"
+#include "ct/CompressiveTracker.h"
+#include "ColorTracker/color_tracker.h"
 
 
 
@@ -15,7 +17,10 @@ public:
 	Camshift *camshift;
 	//CMT tracker
 	cmt::CMT *cmtTracker;
-	
+	//CT tracker
+	CompressiveTracker *ctTracker;
+	//color tracker
+	cv::colortracker::ColorTracker *colorTracker;
 
 	//main function
 	void trackInit();
@@ -36,6 +41,8 @@ private:
 	
 	void camshiftTracking(cv::Mat &frame, cv::Rect box);
 	void cmtTracking(cv::Mat &frame, cv::Rect box);
+	void ctTracking(cv::Mat &frame, cv::Rect bbox);
+	void colorTracking(cv::Mat &frame, cv::Rect bbox);
 
 
 
